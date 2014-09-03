@@ -12,7 +12,8 @@ namespace Migrations.Data
                 .AsInt32()
                 .Identity()
                 .PrimaryKey()
-                .WithColumn("TestColumnA").AsString(30);
+                .WithColumn("TestColumnA")
+                .AsString(30);
         }
     }
 }

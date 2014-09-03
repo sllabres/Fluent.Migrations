@@ -1,9 +1,20 @@
 ﻿using FluentMigrator;
-
 //using FluentMigrator.Runner.Extensions;
 
 namespace Migrations.Data
 {
+    //[Migration(3, "Duplicate Migration Testing")]
+    //public class DuplicateMigration : Migration
+    //{
+    //    public override void Up()
+    //    {
+    //    }
+
+    //    public override void Down()
+    //    {
+    //    }
+    //}
+
     [Migration(3, "Insert Data Into Test Table")]
     public class InsertDataIntoTestTable : Migration
     {

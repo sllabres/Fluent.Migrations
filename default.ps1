@@ -8,7 +8,7 @@ task Compile {
 }
 
 task MigrateOne {
-    Migrate.exe --connection "Data Source=./Data/TestDatabase.sdf;Persist Security Info=False;" --db SqlServerCe --target "./Migrations.Data/bin/Release/Migrations.Data.dll" --verbose true --version 1 --outputFilename ./MigrateOne.sql --output true --transaction-per-session true
+    Migrate.exe --connection "Data Source=./Data/TestDatabase.sdf;Persist Security Info=False;" --db SqlServerCe --target "./Migrations.Data/bin/Release/Migrations.Data.dll" --task Migrate:Up --verbose true --version 1 --outputFilename ./MigrateOne.sql --output true --transaction-per-session true
 }
 
 task Migrate {
@@ -26,4 +26,3 @@ task Rollback {
 task RollbackAll {
 	Migrate.exe --connection "Data Source=./Data/TestDatabase.sdf;Persist Security Info=False;" --db SqlServerCe --target "./Migrations.Data/bin/Release/Migrations.Data.dll" --verbose true --task rollback:all --outputFilename ./RollbackAll.sql --output true --transaction-per-session true
 }
-
