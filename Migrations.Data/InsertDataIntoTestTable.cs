@@ -31,15 +31,4 @@ namespace Migrations.Data
             Delete.FromTable("tbl_Test").Row(new { TestColumnA = "TestA", TestColumnB = "TestB" });
         }
     }
-
-    public class CustomMigrationAttribute : MigrationAttribute
-    {
-        public CustomMigrationAttribute(long version, string author, string description)
-            : base(version, description)
-        {
-            this.Author = author;
-        }
-
-        public string Author { get; private set; }
-    }
 }

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddColumnUserToHelloWorld.cs" />
+    <Compile Include="CustomMigrationAttribute.cs" />
     <Compile Include="InsertDataIntoTestTable.cs" />
     <Compile Include="CreateTestTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
