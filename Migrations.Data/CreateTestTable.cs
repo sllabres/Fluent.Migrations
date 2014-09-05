@@ -2,7 +2,7 @@
 
 namespace Migrations.Data
 {
-    [Migration(1, "Create Test Table")]
+    [CustomMigrationAttribute(1, "Seb", "Create Table tbl_Test")]
     public class CreateTestTable : AutoReversingMigration
     {
         public override void Up()

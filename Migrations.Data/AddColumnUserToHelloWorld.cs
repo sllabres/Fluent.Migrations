@@ -2,7 +2,7 @@
 
 namespace Migrations.Data
 {
-    [Migration(2, "Adding Column To Test Table")]
+    [CustomMigrationAttribute(2, "Seb", "Add column to tbl_Test TestColumnB")]
     public class AddColumnToTestTable : Migration
     {
         public override void Up()
